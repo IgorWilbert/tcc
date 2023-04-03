@@ -1,3 +1,13 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    background-color: #1B232A;
+}
+
 .header-title {
-    color: blue
+    color: #5ED5A8;
+    font-weight: bold;
+    font-size: 25px;
 }
