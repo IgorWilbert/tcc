@@ -1,3 +1,5 @@
+import ArrowButton from "../arrowButton";
+
 import "./styles.css";
 
 const Module = ({ title, description, imageUrl }) => (
@@ -10,6 +12,9 @@ const Module = ({ title, description, imageUrl }) => (
     <div className="module-text">
       <h2 className="module-title">{title}</h2>
       <p className="module-description">{description}</p>
+    </div>
+    <div className="module-button">
+      <ArrowButton />
     </div>
   </div>
 );
