@@ -6,7 +6,13 @@ import FlipButton from "../flipButton";
 
 import "./styles.css";
 
-const FlashCard = ({ question, answer, imageUrl }) => {
+const FlashCard = ({
+  question,
+  answer,
+  imageUrl,
+  onClickForward,
+  onClickBackward,
+}) => {
   const [faceUp, setFaceUp] = useState(true);
 
   return (
@@ -30,12 +36,9 @@ const FlashCard = ({ question, answer, imageUrl }) => {
           </>
         )}
         <div className="flash-card--button">
-          <ArrowButton
-            isForward={false}
-            onClick={() => console.log("backward")}
-          />
+          <ArrowButton isForward={false} onClick={onClickBackward} />
           <FlipButton onClick={() => setFaceUp(!faceUp)} />
-          <ArrowButton onClick={() => console.log("forward")} />
+          <ArrowButton onClick={onClickForward} />
         </div>
       </div>
     </div>
