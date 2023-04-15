@@ -41,6 +41,14 @@ const FlashCardsData = [
 const FlashCards = () => {
   const [cardIndex, setCardIndex] = useState(0);
 
+  const onClickBackward = (i, lastIdx) => {
+    if (i - 1 >= 0) {
+      return i - 1;
+    } else {
+      return lastIdx;
+    }
+  };
+
   return (
     <div className="flash-cards">
       Flash Cards
@@ -57,7 +65,7 @@ const FlashCards = () => {
                 }
                 onClickBackward={() =>
                   setCardIndex(
-                    Math.max(cardIndex - 1, 0) % FlashCardsData.length
+                    onClickBackward(cardIndex, FlashCardsData.length - 1)
                   )
                 }
               />

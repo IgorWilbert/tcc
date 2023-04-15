@@ -25,7 +25,13 @@
   padding: 15px;
   position: absolute;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
+}
+.flash-card--functions {
+  padding: 20px;
 }
 
 .flash-card--title {
