@@ -18,13 +18,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "homepage": "https://igorwilbert.github.io/tcc",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://igorwilbert.github.io/tcc",
   "eslintConfig": {
     "extends": [
       "react-app",
